@@ -1,0 +1,624 @@
+curl 'http://localhost:8080/api/v2/dags/retry/enqueue?remoteNode=local' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: en-US,en;q=0.8' \
+  -H 'Connection: keep-alive' \
+  -H 'Origin: http://localhost:8081' \
+  -H 'Referer: http://localhost:8081/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'Sec-GPC: 1' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36' \
+  -H 'content-type: application/json' \
+  -H 'sec-ch-ua: "Not;A=Brand";v="99", "Brave";v="139", "Chromium";v="139"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  --data-raw '{"params":"1=\"foo\""}'
+curl 'http://localhost:8080/api/v2/dags/retry_wo_exitcode/enqueue?remoteNode=local' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: en-US,en;q=0.8' \
+  -H 'Connection: keep-alive' \
+  -H 'Origin: http://localhost:8081' \
+  -H 'Referer: http://localhost:8081/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'Sec-GPC: 1' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36' \
+  -H 'content-type: application/json' \
+  -H 'sec-ch-ua: "Not;A=Brand";v="99", "Brave";v="139", "Chromium";v="139"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  --data-raw '{"params":"1=\"foo\""}'
+curl 'http://localhost:8080/api/v2/dags/test1/enqueue?remoteNode=local' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: en-US,en;q=0.8' \
+  -H 'Connection: keep-alive' \
+  -H 'Origin: http://localhost:8081' \
+  -H 'Referer: http://localhost:8081/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'Sec-GPC: 1' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36' \
+  -H 'content-type: application/json' \
+  -H 'sec-ch-ua: "Not;A=Brand";v="99", "Brave";v="139", "Chromium";v="139"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  --data-raw '{"params":"1=\"foo\""}'
+curl 'http://localhost:8080/api/v2/dags/test10/enqueue?remoteNode=local' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: en-US,en;q=0.8' \
+  -H 'Connection: keep-alive' \
+  -H 'Origin: http://localhost:8081' \
+  -H 'Referer: http://localhost:8081/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'Sec-GPC: 1' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36' \
+  -H 'content-type: application/json' \
+  -H 'sec-ch-ua: "Not;A=Brand";v="99", "Brave";v="139", "Chromium";v="139"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  --data-raw '{"params":"1=\"foo\""}'
+curl 'http://localhost:8080/api/v2/dags/test101/enqueue?remoteNode=local' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: en-US,en;q=0.8' \
+  -H 'Connection: keep-alive' \
+  -H 'Origin: http://localhost:8081' \
+  -H 'Referer: http://localhost:8081/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'Sec-GPC: 1' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36' \
+  -H 'content-type: application/json' \
+  -H 'sec-ch-ua: "Not;A=Brand";v="99", "Brave";v="139", "Chromium";v="139"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  --data-raw '{"params":"1=\"foo\""}'
+curl 'http://localhost:8080/api/v2/dags/test11/enqueue?remoteNode=local' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: en-US,en;q=0.8' \
+  -H 'Connection: keep-alive' \
+  -H 'Origin: http://localhost:8081' \
+  -H 'Referer: http://localhost:8081/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'Sec-GPC: 1' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36' \
+  -H 'content-type: application/json' \
+  -H 'sec-ch-ua: "Not;A=Brand";v="99", "Brave";v="139", "Chromium";v="139"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  --data-raw '{"params":"1=\"foo\""}'
+curl 'http://localhost:8080/api/v2/dags/test12/enqueue?remoteNode=local' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: en-US,en;q=0.8' \
+  -H 'Connection: keep-alive' \
+  -H 'Origin: http://localhost:8081' \
+  -H 'Referer: http://localhost:8081/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'Sec-GPC: 1' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36' \
+  -H 'content-type: application/json' \
+  -H 'sec-ch-ua: "Not;A=Brand";v="99", "Brave";v="139", "Chromium";v="139"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  --data-raw '{"params":"1=\"foo\""}'
+curl 'http://localhost:8080/api/v2/dags/test13/enqueue?remoteNode=local' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: en-US,en;q=0.8' \
+  -H 'Connection: keep-alive' \
+  -H 'Origin: http://localhost:8081' \
+  -H 'Referer: http://localhost:8081/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'Sec-GPC: 1' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36' \
+  -H 'content-type: application/json' \
+  -H 'sec-ch-ua: "Not;A=Brand";v="99", "Brave";v="139", "Chromium";v="139"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  --data-raw '{"params":"1=\"foo\""}'
+curl 'http://localhost:8080/api/v2/dags/test14/enqueue?remoteNode=local' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: en-US,en;q=0.8' \
+  -H 'Connection: keep-alive' \
+  -H 'Origin: http://localhost:8081' \
+  -H 'Referer: http://localhost:8081/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'Sec-GPC: 1' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36' \
+  -H 'content-type: application/json' \
+  -H 'sec-ch-ua: "Not;A=Brand";v="99", "Brave";v="139", "Chromium";v="139"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  --data-raw '{"params":"1=\"foo\""}'
+curl 'http://localhost:8080/api/v2/dags/test15/enqueue?remoteNode=local' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: en-US,en;q=0.8' \
+  -H 'Connection: keep-alive' \
+  -H 'Origin: http://localhost:8081' \
+  -H 'Referer: http://localhost:8081/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'Sec-GPC: 1' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36' \
+  -H 'content-type: application/json' \
+  -H 'sec-ch-ua: "Not;A=Brand";v="99", "Brave";v="139", "Chromium";v="139"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  --data-raw '{"params":"1=\"foo\""}'
+curl 'http://localhost:8080/api/v2/dags/test16/enqueue?remoteNode=local' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: en-US,en;q=0.8' \
+  -H 'Connection: keep-alive' \
+  -H 'Origin: http://localhost:8081' \
+  -H 'Referer: http://localhost:8081/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'Sec-GPC: 1' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36' \
+  -H 'content-type: application/json' \
+  -H 'sec-ch-ua: "Not;A=Brand";v="99", "Brave";v="139", "Chromium";v="139"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  --data-raw '{"params":"1=\"foo\""}'
+curl 'http://localhost:8080/api/v2/dags/test17/enqueue?remoteNode=local' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: en-US,en;q=0.8' \
+  -H 'Connection: keep-alive' \
+  -H 'Origin: http://localhost:8081' \
+  -H 'Referer: http://localhost:8081/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'Sec-GPC: 1' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36' \
+  -H 'content-type: application/json' \
+  -H 'sec-ch-ua: "Not;A=Brand";v="99", "Brave";v="139", "Chromium";v="139"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  --data-raw '{"params":"1=\"foo\""}'
+curl 'http://localhost:8080/api/v2/dags/test18/enqueue?remoteNode=local' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: en-US,en;q=0.8' \
+  -H 'Connection: keep-alive' \
+  -H 'Origin: http://localhost:8081' \
+  -H 'Referer: http://localhost:8081/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'Sec-GPC: 1' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36' \
+  -H 'content-type: application/json' \
+  -H 'sec-ch-ua: "Not;A=Brand";v="99", "Brave";v="139", "Chromium";v="139"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  --data-raw '{"params":"1=\"foo\""}'
+curl 'http://localhost:8080/api/v2/dags/test19/enqueue?remoteNode=local' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: en-US,en;q=0.8' \
+  -H 'Connection: keep-alive' \
+  -H 'Origin: http://localhost:8081' \
+  -H 'Referer: http://localhost:8081/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'Sec-GPC: 1' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36' \
+  -H 'content-type: application/json' \
+  -H 'sec-ch-ua: "Not;A=Brand";v="99", "Brave";v="139", "Chromium";v="139"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  --data-raw '{"params":"1=\"foo\""}'
+curl 'http://localhost:8080/api/v2/dags/test2/enqueue?remoteNode=local' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: en-US,en;q=0.8' \
+  -H 'Connection: keep-alive' \
+  -H 'Origin: http://localhost:8081' \
+  -H 'Referer: http://localhost:8081/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'Sec-GPC: 1' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36' \
+  -H 'content-type: application/json' \
+  -H 'sec-ch-ua: "Not;A=Brand";v="99", "Brave";v="139", "Chromium";v="139"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  --data-raw '{"params":"1=\"foo\""}'
+curl 'http://localhost:8080/api/v2/dags/test20/enqueue?remoteNode=local' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: en-US,en;q=0.8' \
+  -H 'Connection: keep-alive' \
+  -H 'Origin: http://localhost:8081' \
+  -H 'Referer: http://localhost:8081/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'Sec-GPC: 1' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36' \
+  -H 'content-type: application/json' \
+  -H 'sec-ch-ua: "Not;A=Brand";v="99", "Brave";v="139", "Chromium";v="139"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  --data-raw '{"params":"1=\"foo\""}'
+curl 'http://localhost:8080/api/v2/dags/test21/enqueue?remoteNode=local' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: en-US,en;q=0.8' \
+  -H 'Connection: keep-alive' \
+  -H 'Origin: http://localhost:8081' \
+  -H 'Referer: http://localhost:8081/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'Sec-GPC: 1' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36' \
+  -H 'content-type: application/json' \
+  -H 'sec-ch-ua: "Not;A=Brand";v="99", "Brave";v="139", "Chromium";v="139"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  --data-raw '{"params":"1=\"foo\""}'
+curl 'http://localhost:8080/api/v2/dags/test22/enqueue?remoteNode=local' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: en-US,en;q=0.8' \
+  -H 'Connection: keep-alive' \
+  -H 'Origin: http://localhost:8081' \
+  -H 'Referer: http://localhost:8081/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'Sec-GPC: 1' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36' \
+  -H 'content-type: application/json' \
+  -H 'sec-ch-ua: "Not;A=Brand";v="99", "Brave";v="139", "Chromium";v="139"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  --data-raw '{"params":"1=\"foo\""}'
+curl 'http://localhost:8080/api/v2/dags/test23/enqueue?remoteNode=local' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: en-US,en;q=0.8' \
+  -H 'Connection: keep-alive' \
+  -H 'Origin: http://localhost:8081' \
+  -H 'Referer: http://localhost:8081/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'Sec-GPC: 1' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36' \
+  -H 'content-type: application/json' \
+  -H 'sec-ch-ua: "Not;A=Brand";v="99", "Brave";v="139", "Chromium";v="139"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  --data-raw '{"params":"1=\"foo\""}'
+curl 'http://localhost:8080/api/v2/dags/test24/enqueue?remoteNode=local' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: en-US,en;q=0.8' \
+  -H 'Connection: keep-alive' \
+  -H 'Origin: http://localhost:8081' \
+  -H 'Referer: http://localhost:8081/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'Sec-GPC: 1' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36' \
+  -H 'content-type: application/json' \
+  -H 'sec-ch-ua: "Not;A=Brand";v="99", "Brave";v="139", "Chromium";v="139"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  --data-raw '{"params":"1=\"foo\""}'
+curl 'http://localhost:8080/api/v2/dags/test25/enqueue?remoteNode=local' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: en-US,en;q=0.8' \
+  -H 'Connection: keep-alive' \
+  -H 'Origin: http://localhost:8081' \
+  -H 'Referer: http://localhost:8081/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'Sec-GPC: 1' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36' \
+  -H 'content-type: application/json' \
+  -H 'sec-ch-ua: "Not;A=Brand";v="99", "Brave";v="139", "Chromium";v="139"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  --data-raw '{"params":"1=\"foo\""}'
+curl 'http://localhost:8080/api/v2/dags/test26/enqueue?remoteNode=local' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: en-US,en;q=0.8' \
+  -H 'Connection: keep-alive' \
+  -H 'Origin: http://localhost:8081' \
+  -H 'Referer: http://localhost:8081/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'Sec-GPC: 1' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36' \
+  -H 'content-type: application/json' \
+  -H 'sec-ch-ua: "Not;A=Brand";v="99", "Brave";v="139", "Chromium";v="139"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  --data-raw '{"params":"1=\"foo\""}'
+curl 'http://localhost:8080/api/v2/dags/test27/enqueue?remoteNode=local' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: en-US,en;q=0.8' \
+  -H 'Connection: keep-alive' \
+  -H 'Origin: http://localhost:8081' \
+  -H 'Referer: http://localhost:8081/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'Sec-GPC: 1' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36' \
+  -H 'content-type: application/json' \
+  -H 'sec-ch-ua: "Not;A=Brand";v="99", "Brave";v="139", "Chromium";v="139"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  --data-raw '{"params":"1=\"foo\""}'
+curl 'http://localhost:8080/api/v2/dags/test28/enqueue?remoteNode=local' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: en-US,en;q=0.8' \
+  -H 'Connection: keep-alive' \
+  -H 'Origin: http://localhost:8081' \
+  -H 'Referer: http://localhost:8081/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'Sec-GPC: 1' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36' \
+  -H 'content-type: application/json' \
+  -H 'sec-ch-ua: "Not;A=Brand";v="99", "Brave";v="139", "Chromium";v="139"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  --data-raw '{"params":"1=\"foo\""}'
+curl 'http://localhost:8080/api/v2/dags/test29/enqueue?remoteNode=local' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: en-US,en;q=0.8' \
+  -H 'Connection: keep-alive' \
+  -H 'Origin: http://localhost:8081' \
+  -H 'Referer: http://localhost:8081/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'Sec-GPC: 1' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36' \
+  -H 'content-type: application/json' \
+  -H 'sec-ch-ua: "Not;A=Brand";v="99", "Brave";v="139", "Chromium";v="139"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  --data-raw '{"params":"1=\"foo\""}'
+curl 'http://localhost:8080/api/v2/dags/test3/enqueue?remoteNode=local' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: en-US,en;q=0.8' \
+  -H 'Connection: keep-alive' \
+  -H 'Origin: http://localhost:8081' \
+  -H 'Referer: http://localhost:8081/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'Sec-GPC: 1' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36' \
+  -H 'content-type: application/json' \
+  -H 'sec-ch-ua: "Not;A=Brand";v="99", "Brave";v="139", "Chromium";v="139"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  --data-raw '{"params":"1=\"foo\""}'
+curl 'http://localhost:8080/api/v2/dags/test30/enqueue?remoteNode=local' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: en-US,en;q=0.8' \
+  -H 'Connection: keep-alive' \
+  -H 'Origin: http://localhost:8081' \
+  -H 'Referer: http://localhost:8081/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'Sec-GPC: 1' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36' \
+  -H 'content-type: application/json' \
+  -H 'sec-ch-ua: "Not;A=Brand";v="99", "Brave";v="139", "Chromium";v="139"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  --data-raw '{"params":"1=\"foo\""}'
+curl 'http://localhost:8080/api/v2/dags/test4/enqueue?remoteNode=local' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: en-US,en;q=0.8' \
+  -H 'Connection: keep-alive' \
+  -H 'Origin: http://localhost:8081' \
+  -H 'Referer: http://localhost:8081/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'Sec-GPC: 1' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36' \
+  -H 'content-type: application/json' \
+  -H 'sec-ch-ua: "Not;A=Brand";v="99", "Brave";v="139", "Chromium";v="139"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  --data-raw '{"params":"1=\"foo\""}'
+curl 'http://localhost:8080/api/v2/dags/test5/enqueue?remoteNode=local' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: en-US,en;q=0.8' \
+  -H 'Connection: keep-alive' \
+  -H 'Origin: http://localhost:8081' \
+  -H 'Referer: http://localhost:8081/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'Sec-GPC: 1' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36' \
+  -H 'content-type: application/json' \
+  -H 'sec-ch-ua: "Not;A=Brand";v="99", "Brave";v="139", "Chromium";v="139"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  --data-raw '{"params":"1=\"foo\""}'
+curl 'http://localhost:8080/api/v2/dags/test6/enqueue?remoteNode=local' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: en-US,en;q=0.8' \
+  -H 'Connection: keep-alive' \
+  -H 'Origin: http://localhost:8081' \
+  -H 'Referer: http://localhost:8081/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'Sec-GPC: 1' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36' \
+  -H 'content-type: application/json' \
+  -H 'sec-ch-ua: "Not;A=Brand";v="99", "Brave";v="139", "Chromium";v="139"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  --data-raw '{"params":"1=\"foo\""}'
+curl 'http://localhost:8080/api/v2/dags/test7/enqueue?remoteNode=local' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: en-US,en;q=0.8' \
+  -H 'Connection: keep-alive' \
+  -H 'Origin: http://localhost:8081' \
+  -H 'Referer: http://localhost:8081/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'Sec-GPC: 1' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36' \
+  -H 'content-type: application/json' \
+  -H 'sec-ch-ua: "Not;A=Brand";v="99", "Brave";v="139", "Chromium";v="139"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  --data-raw '{"params":"1=\"foo\""}'
+curl 'http://localhost:8080/api/v2/dags/test8/enqueue?remoteNode=local' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: en-US,en;q=0.8' \
+  -H 'Connection: keep-alive' \
+  -H 'Origin: http://localhost:8081' \
+  -H 'Referer: http://localhost:8081/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'Sec-GPC: 1' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36' \
+  -H 'content-type: application/json' \
+  -H 'sec-ch-ua: "Not;A=Brand";v="99", "Brave";v="139", "Chromium";v="139"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  --data-raw '{"params":"1=\"foo\""}'
+curl 'http://localhost:8080/api/v2/dags/test9/enqueue?remoteNode=local' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: en-US,en;q=0.8' \
+  -H 'Connection: keep-alive' \
+  -H 'Origin: http://localhost:8081' \
+  -H 'Referer: http://localhost:8081/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'Sec-GPC: 1' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36' \
+  -H 'content-type: application/json' \
+  -H 'sec-ch-ua: "Not;A=Brand";v="99", "Brave";v="139", "Chromium";v="139"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  --data-raw '{"params":"1=\"foo\""}'
+curl 'http://localhost:8080/api/v2/dags/testEcho/enqueue?remoteNode=local' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: en-US,en;q=0.8' \
+  -H 'Connection: keep-alive' \
+  -H 'Origin: http://localhost:8081' \
+  -H 'Referer: http://localhost:8081/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'Sec-GPC: 1' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36' \
+  -H 'content-type: application/json' \
+  -H 'sec-ch-ua: "Not;A=Brand";v="99", "Brave";v="139", "Chromium";v="139"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  --data-raw '{"params":"1=\"foo\""}'
+curl 'http://localhost:8080/api/v2/dags/testRetryOnExitCodes/enqueue?remoteNode=local' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: en-US,en;q=0.8' \
+  -H 'Connection: keep-alive' \
+  -H 'Origin: http://localhost:8081' \
+  -H 'Referer: http://localhost:8081/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'Sec-GPC: 1' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36' \
+  -H 'content-type: application/json' \
+  -H 'sec-ch-ua: "Not;A=Brand";v="99", "Brave";v="139", "Chromium";v="139"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  --data-raw '{"params":"1=\"foo\""}'
+curl 'http://localhost:8080/api/v2/dags/testsleep10/enqueue?remoteNode=local' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: en-US,en;q=0.8' \
+  -H 'Connection: keep-alive' \
+  -H 'Origin: http://localhost:8081' \
+  -H 'Referer: http://localhost:8081/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'Sec-GPC: 1' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36' \
+  -H 'content-type: application/json' \
+  -H 'sec-ch-ua: "Not;A=Brand";v="99", "Brave";v="139", "Chromium";v="139"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  --data-raw '{"params":"1=\"foo\""}'
+curl 'http://localhost:8080/api/v2/dags/testsleep101/enqueue?remoteNode=local' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: en-US,en;q=0.8' \
+  -H 'Connection: keep-alive' \
+  -H 'Origin: http://localhost:8081' \
+  -H 'Referer: http://localhost:8081/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'Sec-GPC: 1' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36' \
+  -H 'content-type: application/json' \
+  -H 'sec-ch-ua: "Not;A=Brand";v="99", "Brave";v="139", "Chromium";v="139"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  --data-raw '{"params":"1=\"foo\""}'
+curl 'http://localhost:8080/api/v2/dags/testsleep20/enqueue?remoteNode=local' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: en-US,en;q=0.8' \
+  -H 'Connection: keep-alive' \
+  -H 'Origin: http://localhost:8081' \
+  -H 'Referer: http://localhost:8081/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'Sec-GPC: 1' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36' \
+  -H 'content-type: application/json' \
+  -H 'sec-ch-ua: "Not;A=Brand";v="99", "Brave";v="139", "Chromium";v="139"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  --data-raw '{"params":"1=\"foo\""}'
+curl 'http://localhost:8080/api/v2/dags/testsleep201/enqueue?remoteNode=local' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: en-US,en;q=0.8' \
+  -H 'Connection: keep-alive' \
+  -H 'Origin: http://localhost:8081' \
+  -H 'Referer: http://localhost:8081/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'Sec-GPC: 1' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36' \
+  -H 'content-type: application/json' \
+  -H 'sec-ch-ua: "Not;A=Brand";v="99", "Brave";v="139", "Chromium";v="139"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  --data-raw '{"params":"1=\"foo\""}'

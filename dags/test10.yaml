@@ -1,0 +1,20 @@
+tags: test
+steps:
+  - name: "1"
+    command: "sleep 10"
+  - name: "2"
+    command: "sleep 10"
+    depends: ["1"]
+  - name: "3"
+    command: "sleep 10"
+    depends: ["2"]
+  - name: "4"
+    command: "sleep 10"
+    depends: ["3"]
+  - name: "5"
+    command: "sleep 10"
+    depends: ["4"]
+  - name: "6"
+    command: "sleep 10"
+    depends: ["5"]
+
